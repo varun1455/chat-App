@@ -34,16 +34,16 @@ const Username = () => {
     }
 
     return (
-        <div className="px-3 py-4 shadow bg-white text-dark border rounded row">
+        <div className="px-3 py-4 shadow bg-black text-dark border rounded row">
             <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4">
-                    <h2 className="text-warning mb-4">Enter your Display Name</h2>
+                    <h2 className="text-success mb-4">Enter Your Name</h2>
                 </div>
                 <div className="form-group mb-4">
-                    <input type="name" className="form-control bg-light" name="name" placeholder="Enter name" onChange={handleChange} />
+                    <input type="text" className="form-control bg-light" name="name" placeholder="Enter name" onChange={handleChange} />
                 </div>
-                
-                <button type="submit" className="btn btn-warning w-100 mb-2">Submit</button>
+
+                <button type="submit" className="btn btn-success w-100 mb-2">Submit</button>
                 {error ? <small className="text-danger m-auto">{error}</small> : "" }
             </form>
         </div>
